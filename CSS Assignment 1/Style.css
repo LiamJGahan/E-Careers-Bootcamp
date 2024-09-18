@@ -1,0 +1,359 @@
+a
+{
+	text-decoration: none;
+}
+
+body
+{
+	background-color: #EEE;
+	font-family: Arial, Helvetica;
+}
+
+#main-container-1, #main-container-2, #main-container-3
+{
+    background-color: white;
+	width: 800px;
+    height: 750px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#content-container
+{
+	padding: 50px 0px 0px 50px;
+}
+
+#main-container-1 header
+{	
+	color: white;
+	text-align: center;
+	padding: 5px;
+    background-color: #66CCFF;
+
+	border-bottom: solid #9ddeff94;
+	border-top: solid #9ddeff94;
+	border-width: 6px;
+}
+
+#main-container-2 header
+{	
+	color: white;
+	text-align: center;
+	padding: 5px;
+    background-color: #66ff99;
+
+	border-bottom: solid #9dffd194;
+	border-top: solid #9dffd194;
+	border-width: 6px;
+}
+
+#main-container-3 header
+{	
+	color: white;
+	text-align: center;
+	padding: 5px;
+    background-color: #ff7d66;
+
+	border-bottom: solid #ffb49d94;
+	border-top: solid #ffb49d94;
+	border-width: 6px;
+}
+
+nav
+{
+	width: 150px;
+	float: left;
+	
+	border-top-left-radius: 12px;
+	border-bottom-left-radius: 12px;
+	border-width: 2px;
+}
+
+#main-container-1 #First-Tab
+{
+	display: block;
+
+	list-style-type: none;
+	line-height: 50px;
+	width: 150px;
+
+	color: white;	
+	background-image: linear-gradient(#9ddeff94, #95dcff, #9ddeff94);
+
+	border-top: solid #0b80bb;
+	border-left: solid #0b80bb;
+	border-top-left-radius: 12px;
+	border-width: 2px;
+
+	text-align: center;
+}
+
+#main-container-2 #First-Tab
+{
+	display: block;
+
+	list-style-type: none;
+	line-height: 50px;
+	width: 150px;
+
+	color: white;	
+	background-image: linear-gradient(#30fa6da4, #00ff62, #30fa6da4);
+	border-top: solid #0bbb54;
+	border-left: solid #0bbb54;
+	border-top-left-radius: 12px;
+	border-width: 2px;
+
+	text-align: center;
+}
+
+#main-container-3 #First-Tab
+{
+	display: block;
+
+	list-style-type: none;
+	line-height: 50px;
+	width: 150px;
+
+	color: white;	
+	background-image: linear-gradient(#fa4e30a4, #ff2600, #fa4e30a4);
+	border-top: solid #bb2e0b;
+	border-left: solid #bb2e0b;
+	border-top-left-radius: 12px;
+	border-width: 2px;
+
+	text-align: center;
+}
+
+#main-container-1 #Second-Tab
+{
+	display: block;
+
+	list-style-type: none;
+	line-height: 50px;
+	width: 150px;	
+
+	color: white;	
+	background-image: linear-gradient(#30b7faa4, #00aaff, #30b7faa4);
+
+	border-bottom: solid #0b80bb;
+	border-top: Solid #0b80bb;
+	border-left: solid #0b80bb;
+	border-width: 2px;
+
+	text-align: center;
+}
+
+#main-container-2 #Second-Tab
+{
+	display: block;
+
+	list-style-type: none;
+	line-height: 50px;
+	width: 150px;	
+
+	color: white;	
+	background-image: linear-gradient(#9dffc394, #95ffaf, #9dffc394);
+
+	border-bottom: solid #0bbb54;
+	border-top: Solid #0bbb54;
+	border-left: solid #0bbb54;
+	border-width: 2px;
+
+	text-align: center;
+}
+
+#main-container-3 #Second-Tab
+{
+	display: block;
+
+	list-style-type: none;
+	line-height: 50px;
+	width: 150px;	
+
+	color: white;	
+	background-image: linear-gradient(#fa4e30a4, #ff2600, #fa4e30a4);
+
+	border-bottom: solid #bb2e0b;
+	border-top: Solid #bb2e0b;
+	border-left: solid #bb2e0b;
+	border-width: 2px;
+
+	text-align: center;
+}
+
+#main-container-1 #Third-Tab
+{
+	display: block;
+
+	list-style-type: none;
+	line-height: 50px;
+	width: 150px;
+
+	color: white;	
+	background-image: linear-gradient(#30b7faa4, #00aaff, #30b7faa4);
+
+	border-bottom: solid #0b80bb;
+	border-left: solid #0b80bb;
+	border-bottom-left-radius: 12px;
+	border-width: 2px;
+
+	text-align: center;
+}
+
+#main-container-2 #Third-Tab
+{
+	display: block;
+
+	list-style-type: none;
+	line-height: 50px;
+	width: 150px;
+
+	color: white;	
+	background-image: linear-gradient(#30fa6da4, #00ff62, #30fa6da4);
+
+	border-bottom: solid #0bbb54;
+	border-left: solid #0bbb54;
+	border-bottom-left-radius: 12px;
+	border-width: 2px;
+
+	text-align: center;
+}
+
+#main-container-3 #Third-Tab
+{
+	display: block;
+
+	list-style-type: none;
+	line-height: 50px;
+	width: 150px;
+
+	color: white;	
+	background-image: linear-gradient(#ffa49d94, #ff9895, #ffa49d94);
+
+	border-bottom: solid #bb2e0b;
+	border-left: solid #bb2e0b;
+	border-bottom-left-radius: 12px;
+	border-width: 2px;
+
+	text-align: center;
+}
+
+#main-container-1 #First-Tab:hover, #main-container-1 #Second-Tab:hover, #main-container-1 #Third-Tab:hover 
+{	
+	cursor: default;
+	color: #66CCFF;	
+	background-image: linear-gradient(#66ccff10, #66ccff10);
+}
+
+#main-container-2 #First-Tab:hover, #main-container-2 #Second-Tab:hover, #main-container-2 #Third-Tab:hover 
+{	
+	cursor: default;
+	color: #66ffab;	
+	background-image: linear-gradient(#66ffbf10, #66ffbf10);
+}
+
+#main-container-3 #First-Tab:hover, #main-container-3 #Second-Tab:hover, #main-container-3 #Third-Tab:hover 
+{	
+	cursor: default;
+	color: #ff7866;	
+	background-image: linear-gradient(#ff7d6610, #ff7d6610);
+}
+
+#main-container-1 section
+{
+    width: 500px;
+    height: 500px;
+    float:left;
+	margin: 0px 0px 50px 0px;
+	padding: 0px;
+
+    border-style: solid;
+	border-color: #0b80bb;
+	border-bottom-left-radius: 12px;
+	border-top-right-radius: 12px;
+	border-bottom-right-radius: 12px;
+	border-width: 2px;
+
+	background-image: linear-gradient(#95dcff, #d6f1ff94);
+
+	text-shadow: 2px 2px 6px white;
+}
+
+#main-container-1 section img
+{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#main-container-1 section img:hover
+{
+	transform: scale(1.4);
+}
+
+#main-container-2 section
+{
+    width: 500px;
+    height: 500px;
+    float:left;
+	margin: 0px 0px 50px 0px;
+	padding: 0px;
+
+    border-style: solid;
+	border-color: #0bbb54;
+	border-bottom-left-radius: 12px;
+	border-top-right-radius: 12px;
+	border-bottom-right-radius: 12px;
+	border-width: 2px;
+
+	background-image: url('pexels-hoach-le-dinh-1757049620-28120193.jpg');
+	background-size:150%;
+
+	text-shadow: 2px 2px 6px white;
+}
+
+#main-container-3 section
+{
+    width: 500px;
+    height: 500px;
+    float:left;
+	margin: 0px 0px 50px 0px;
+	padding: 0px;
+
+    border-style: solid;
+	border-color: #bb2e0b;
+	border-bottom-left-radius: 12px;
+	border-top-right-radius: 12px;
+	border-bottom-right-radius: 12px;
+	border-width: 2px;
+
+	background-image: linear-gradient(#ffa195, #ffdcd694);
+
+	text-shadow: 2px 2px 6px white;
+}
+
+#main-container-3 section img
+{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	box-shadow: 10px 10px 1px rgba(0, 0, 0, 0.801);
+}
+
+section p 
+{
+    padding: 15px;
+}
+
+footer
+{
+	clear: both;
+	padding: 20px;
+	background-color: #999999;
+	color: white;
+}
+
+#Pexels
+{
+	padding-left: 400px;
+}

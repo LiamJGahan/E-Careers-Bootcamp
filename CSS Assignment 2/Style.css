@@ -1,0 +1,148 @@
+body
+{
+    width: 60%;
+    margin: auto;
+    margin-top: 5%;
+}
+
+.Grid
+{    
+    display: grid;
+    grid-template:
+    "GreenItem GreenItem GreenItem"
+    "YellowItem RedItem BlueItem"
+    "OrangeItem OrangeItem BlueItem";
+
+    gap: 20px;
+}
+
+#Item1
+{
+    grid-area: GreenItem;
+    background-color: rgba(9, 255, 0, 0.658);
+    height: 100px;
+    padding: 20px;
+    font-size: 20px;
+}
+
+#Item2
+{
+    grid-area: YellowItem;
+    background-color: rgba(255, 255, 0, 0.658);
+    height: 200px;
+    padding: 20px;
+    font-size: 20px;
+}
+
+.NumberGrid
+{
+    display: grid;
+    grid-template:
+    "Number1 Number2"
+    "Number3 Number4";
+
+    padding: 20px;
+    gap: 20px;
+}
+
+#NumberItem1
+{
+    padding: 10px;
+    grid-area: Number1;
+    height: 40px;
+    background-color: white
+}
+
+#NumberItem2
+{
+    padding: 10px;
+    grid-area: Number2;
+    height: 40px;
+    background-color: white
+}
+
+#NumberItem3
+{
+    padding: 10px;
+    grid-area: Number3;
+    height: 40px;
+    background-color: white
+}
+
+#NumberItem4
+{
+    padding: 10px;
+    grid-area: Number4;
+    height: 40px;
+    background-color: white
+}
+
+#Item3
+{
+    grid-area: RedItem;
+    background-color: rgba(255, 30, 0, 0.658);
+    height: 200px;
+    padding: 20px;
+    font-size: 20px;
+}
+
+.CharacterGrid
+{
+    display: grid;
+    grid-template:
+    "CharacterA CharacterB"
+    "CharacterC CharacterD";
+
+    padding: 20px;
+    gap: 20px;
+}
+
+#CharacterItem1
+{
+    padding: 10px;
+    grid-area: CharacterA;
+    height: 40px;
+    background-color: white
+}
+
+#CharacterItem2
+{
+    padding: 10px;
+    grid-area: CharacterB;
+    height: 40px;
+    background-color: white
+}
+
+#CharacterItem3
+{
+    padding: 10px;
+    grid-area: CharacterC;
+    height: 40px;
+    background-color: white
+}
+
+#CharacterItem4
+{
+    padding: 10px;
+    grid-area: CharacterD;
+    height: 40px;
+    background-color: white
+}
+
+#Item4
+{
+    grid-area: BlueItem;
+    background-color: rgba(0, 68, 255, 0.658);
+    padding: 20px;
+    padding-right: 100px;
+    font-size: 20px;
+}
+
+#Item5
+{
+    grid-area: OrangeItem;
+    background-color: rgba(255, 136, 0, 0.658);
+    height: 100px;
+    padding: 20px;
+    font-size: 20px;
+}

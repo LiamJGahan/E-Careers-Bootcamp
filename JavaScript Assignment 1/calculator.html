@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Claculator</title>
+    <link rel="stylesheet" href="Style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Sixtyfour&display=swap" rel="stylesheet">
+    <script src="main.js"></script>
+</head>
+<body>
+    <div class="Container">
+        <div id="Screen">
+            <h1><span id="result"></span></h1>
+        </div>
+
+        <div class="Inputs">
+            <Input type="number" name="firstNumber" id="firstNumber" placeholder="Enter First Number" onclick="Reset()" min="0.0000001" max="100000000">
+            <Input type="number" name="secondNumber" id="secondNumber" placeholder="Enter Second Number" onclick="Reset()" min="0.0000001" max="100000000">
+        </div>
+
+        <div class="Buttons">
+            <button onclick="Add()"> + </button>
+            <button onclick="Subtract()"> - </button>
+            <button onclick="Times()"> &times; </button>
+            <button onclick="Divide()"> &divide; </button>
+        </div>
+    </div>
+</body>
+</html>
