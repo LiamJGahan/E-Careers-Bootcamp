@@ -1,17 +1,6 @@
-a = float(input())
-b = float(input())
-c = str(input())
+first_string = "a,b,c"
+second_string = "x,y,z"
 
-result = 0
-
-if (c == "Add"):
-    result = a + b
-if (c == "Subtract"):
-    result = a - b
-if (c == "Times"):
-    result = a * b
-if (c == "Divide"):
-    result = a / b
-
+result = second_string.replace(",", " ") + " " + first_string.replace(",", " ")
 
 print(result)
