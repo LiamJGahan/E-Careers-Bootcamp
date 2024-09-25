@@ -1,6 +1,5 @@
-first_string = "a,b,c"
-second_string = "x,y,z"
+string = "abc", "xyz"
 
-result = second_string.replace(",", " ") + " " + first_string.replace(",", " ")
+result = " ".join(reversed(string))
 
 print(result)
