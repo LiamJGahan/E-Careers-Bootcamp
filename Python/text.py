@@ -1,6 +1,8 @@
-import os
+n = str(input("Enter Number"))
 
-filename = str(input("Enter file name here"))
-path = os. path. splitext(filename)
+a = int(str(n) + str(n))
+b = int(str(n) + str(n) + str(n))
 
-print(path[1])
+r = float(n) + float(a) + float(b)
+
+print(r)
