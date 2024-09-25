@@ -6,7 +6,7 @@ result = 0
 
 if (c == "Add"):
     result = a + b
-if (c == "Subract"):
+if (c == "Subtract"):
     result = a - b
 if (c == "Times"):
     result = a * b
