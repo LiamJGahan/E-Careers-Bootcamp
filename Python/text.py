@@ -1,7 +1,7 @@
-n = str(input("Enter Number"))
+n = input("Enter Number")
 
-a = int(str(n) + str(n))
-b = int(str(n) + str(n) + str(n))
+a = float(str(n) + str(n))
+b = float(str(n) + str(n) + str(n))
 
 r = float(n) + float(a) + float(b)
 
