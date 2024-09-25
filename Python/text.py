@@ -1,5 +1,6 @@
-string = "abc", "xyz"
+import os
 
-result = " ".join(reversed(string))
+filename = str(input("Enter file name here"))
+path = os. path. splitext(filename)
 
-print(result)
+print(path[1])
