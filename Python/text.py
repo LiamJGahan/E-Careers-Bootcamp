@@ -1,9 +1,14 @@
-number_list = [2, 4, 6, 3]
-squared_num_list = []
+list_1 = [5, 10, 15, 200, 25, 50,20]
+list_2 = []
 
-for number in number_list:
-    squared_num = number * number
-    squared_num_list.append(squared_num)
+first_20 = True
 
-print(squared_num_list)
+for num in list_1:
+    if  num == 20 and first_20 == True:
+        list_2.append(200)
+        first_20 = False
+        print(first_20)
+    else:
+        list_2.append(num)
 
+print(list_2)
