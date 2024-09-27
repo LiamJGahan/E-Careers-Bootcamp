@@ -1,6 +1,11 @@
-dict_1 = {"a":100,"b":200,"c":300}
+sample_dict = {
+  'Physics': 82,
+  'Math': 65,
+  'history': 75
+}
 
-if 200 in dict_1.values():
-    print("200 is present in dict_1")
-else:
-    print("does not contain 200 in dict_1")
+for key, value in sample_dict.items():
+
+    if  value == min(sample_dict.values()):
+        print(key) 
+
