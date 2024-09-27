@@ -1,10 +1,8 @@
-list_1 = [5, 10, 15, 20, 25, 50,20]
-list_2 = []
+tuple_1 = (10, 20, 30, 40)
+a, b, c ,d = tuple_1
 
-for num in list_1:
-    if  num == 20:
-        continue
-    else:
-        list_2.append(num)
+print(a)
+print(b)
+print(c)
+print(d)
 
-print(list_2)
