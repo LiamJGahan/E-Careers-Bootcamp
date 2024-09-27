@@ -1,8 +1,6 @@
-tuple_1 = (10, 20, 30, 40)
-a, b, c ,d = tuple_1
+list_1 = ["Ten", "Twenty", "Thirty"]
+list_2 = [10, 20, 30]
 
-print(a)
-print(b)
-print(c)
-print(d)
+res = dict(map(lambda i,j : (i,j) , list_1,list_2))
 
+print(res)
