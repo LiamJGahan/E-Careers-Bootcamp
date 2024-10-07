@@ -2,7 +2,7 @@ import mysql.connector
 import MySQL_Config
 
 # connect to mysql
-db_connection = mysql.connector.connect(MySQL_Config.config)
+db_connection = mysql.connector.connect(**MySQL_Config.config)
 
 # create cursor to execute the query
 cursor = db_connection.cursor()
