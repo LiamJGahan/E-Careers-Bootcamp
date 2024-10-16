@@ -1,7 +1,19 @@
-list = ["red", "green", "blue"]
+class ErrorSalaryBelowMinimum (Exception):
+    "Salary was below the minimum"
+    
 
 try:
-    user_num = int(input("Enter username:"))
-    print(list[user_num])
-except IndexError:
-    print("Number given is out of index")
+    name = input("Enter your name:")
+    dept = input("Enter your department:")
+    salary = int(input("Enter your expected salary:"))
+
+    if (salary < 1000):
+        raise ErrorSalaryBelowMinimum("Salary too low")
+    else:
+
+        print(name)
+        print(dept)
+        print(salary)
+
+except ErrorSalaryBelowMinimum:
+    print("Below the minimum required salary")

@@ -1,10 +1,3 @@
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis porta urna et molestie tincidunt. 
-Aliquam erat volutpat. Vivamus venenatis lacus sit amet ex gravida maximus. Duis tempus tempor interdum. Sed id sodales orci, quis congue massa. 
-Sed fermentum neque porttitor est ultricies tincidunt. Mauris dignissim orci vel ligula mollis dapibus. Donec faucibus massa mauris, 
-iaculis egestas arcu semper sit amet.
-Pellentesque vulputate lacus sed molestie pretium. Aenean eu dolor imperdiet, aliquet sapien a, 
-ultrices turpis. Sed blandit, mauris ac feugiat commodo, ipsum elit lobortis ipsum, eu pharetra elit ipsum nec nisi. Sed et metus consectetur, 
-lacinia elit sed, facilisis lorem. Phasellus consequat fringilla erat, pretium faucibus libero laoreet a. In id ex sed neque accumsan vulputate. 
-Aliquam venenatis porttitor velit, non porttitor eros congue et. Quisque ultricies risus arcu, vitae varius metus cursus et. Etiam porta ligula 
-quam. Mauris semper at mauris eu pharetra. Fusce ultrices velit sollicitudin, vehicula lacus sit amet, tincidunt eros. Donec consectetur ex et 
-erat ultrices aliquet. In semper leo nec accumsan varius.hihihi
+red
+green
+yellow

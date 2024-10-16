@@ -91,8 +91,6 @@ function find(id1){
         if(value.id == id1){
             document.getElementById('postId').value = id1
             document.getElementById('postTitle').value = value.title
-            document.getElementById('postAuthor').value = value.author
-            document.getElementById('postYear').value = value.year
             document.getElementById('post').value = value.post
         }
     })
