@@ -142,7 +142,8 @@ function renderQuestions(){
 
     if (home == null){
         let element = document.createElement('div')
-        element.innerHTML = '<button id="home" onclick="returnHome()" class="btn btn-primary">Home</button>'
+        element.className = "container"
+        element.innerHTML = '<br><br><button id="home" onclick="returnHome()" class="btn btn-primary">Home</button> <button id="skip" onclick="skipQuestion()" class="btn btn-primary">Skip</button>'
         quizPanel.appendChild(element)
     }
 }
@@ -161,6 +162,11 @@ function setAnswer(choice){
             break;        
     }
  
+    nextQuestion()
+}
+
+function skipQuestion(){
+    answers.push({'question_id':0, 'choice_id':0})
     nextQuestion()
 }
 
