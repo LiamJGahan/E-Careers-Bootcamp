@@ -18,15 +18,16 @@ function getQuiz(){
      .then(data => {
          if(data.length > 0){
             quizOptions = document.getElementById('quizzes')
-            quizOptions.innerHTML = ""
+            quizOptions.innerHTML = ""           
+
             data.forEach((quiz) =>{
 
-                let postElement = document.createElement('div')
-                postElement.className = 'card mb-3'
+                let element = document.createElement('div')
+                element.className = 'card mb-3'
 
-                postElement.innerHTML = '<button onclick="selectQuiz('+ quiz.id +')" class="btn btn-primary">'+ quiz.title +'</button>'    
+                element.innerHTML = '<button onclick="selectQuiz('+ quiz.id +')" class="btn btn-primary">'+ quiz.title +'</button>'    
 
-                quizOptions.appendChild(postElement)
+                quizOptions.appendChild(element)
             })
          }
      })
@@ -75,31 +76,75 @@ function renderQuestions(){
     let choiceA = document.getElementById('choiceA')
     let choiceB = document.getElementById('choiceB')
     let choiceC = document.getElementById('choiceC')
+    let home = document.getElementById('home')
     let choiceCounter = 1
 
     if(currentQuestion == 0){
         currentQuestion = questionsAndChoices[0].question_id
     }
 
+    quizPanel = document.getElementById('quizPanel')
+
     questionsAndChoices.forEach((question) =>{
         if(currentQuestion == question.question_id){
             if(choiceCounter == 1){
-                questionText.innerHTML = question.question_text
-                choiceA.innerHTML = question.choice_text
-                currentOptionA = {'question_id':question.question_id, 'choice_id':question.id}
+                if (questionText == null){
+                    let element = document.createElement('div')
+                    element.className = "container"
+                    element.innerHTML = '<h3 id="question" class="mt-5">'+ question.question_text +'</h3><br><br>'
+                    quizPanel.appendChild(element)
+                }
+                else{
+                    questionText.innerHTML = question.question_text
+                }
+               
+                if (choiceA == null){
+                    let element = document.createElement('div')
+                    element.className = 'card mb-3'                    
+                    element.innerHTML = '<button id="choiceA" onclick="setAnswer(1)" class="btn btn-primary">'+ question.choice_text +'</button>'
+                    quizPanel.appendChild(element)
+                    currentOptionA = {'question_id':question.question_id, 'choice_id':question.id}
+                }
+                else{
+                    choiceA.innerHTML = question.choice_text
+                    currentOptionA = {'question_id':question.question_id, 'choice_id':question.id}
+                }
             }
             if(choiceCounter == 2){
-                choiceB.innerHTML = question.choice_text
-                currentOptionB = {'question_id':question.question_id, 'choice_id':question.id}
+                if (choiceB == null){
+                    let element = document.createElement('div')
+                    element.className = 'card mb-3'                    
+                    element.innerHTML = '<button id="choiceB" onclick="setAnswer(2)" class="btn btn-primary">'+ question.choice_text +'</button>'
+                    quizPanel.appendChild(element)
+                    currentOptionB = {'question_id':question.question_id, 'choice_id':question.id}
+                }
+                else{
+                    choiceB.innerHTML = question.choice_text
+                    currentOptionB = {'question_id':question.question_id, 'choice_id':question.id}
+                }
             }
             if(choiceCounter == 3){
-                choiceC.innerHTML = question.choice_text
-                currentOptionC = {'question_id':question.question_id, 'choice_id':question.id}
+                if (choiceC == null){
+                    let element = document.createElement('div')
+                    element.className = 'card mb-3'
+                    element.innerHTML = '<button id="choiceC" onclick="setAnswer(3)" class="btn btn-primary">'+ question.choice_text +'</button>'
+                    quizPanel.appendChild(element)
+                    currentOptionC = {'question_id':question.question_id, 'choice_id':question.id}
+                }
+                else{
+                    choiceC.innerHTML = question.choice_text
+                    currentOptionC = {'question_id':question.question_id, 'choice_id':question.id}
+                }
             }
-
             choiceCounter += 1
         }
     })
+
+    if (home == null){
+        let element = document.createElement('div')
+        element.innerHTML = '<button id="home" onclick="returnHome()" class="btn btn-primary">Home</button>'
+        quizPanel.appendChild(element)
+    }
 }
 
 // add a choice selection to answers array
