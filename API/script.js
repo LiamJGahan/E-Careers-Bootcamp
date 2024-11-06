@@ -5,7 +5,7 @@
 //let users = []
 
 function getData() {
-    const url = 'http://localhost:5002/data'
+    const url = 'http://localhost:5002/data' // need to run app.py in python folder
     fetch(url)
     .then(response => response.json())
      .then(data => {

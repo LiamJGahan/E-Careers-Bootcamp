@@ -56,7 +56,7 @@ def sumbit_and_score():
                     score += 1
 
     cursor.close()
-    return jsonify(score)
+    return jsonify({'score':score})
 
 
 if __name__ == '__main__':

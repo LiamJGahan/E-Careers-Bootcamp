@@ -39,7 +39,7 @@ function getQuiz(){
 function selectQuiz(quizID){
     localStorage.quizSelection = quizID
     document.location.href = 
-    'file:///C:/Users/Liam/Desktop/E-Careers-Bootcamp/Capstone%20Project/templates/quiz.html?'
+    './../templates/quiz.html?'
 }
 
 // get/store question and choices
@@ -156,9 +156,9 @@ function submitAnswers(){
 } // check the answers given are not more or less then questions
 
 function openScore(json){
-    localStorage.score = json
+    localStorage.score = json.score
     document.location.href = 
-    'file:///C:/Users/Liam/Desktop/E-Careers-Bootcamp/Capstone%20Project/templates/score.html?'
+    './../templates/score.html'
 }
 
 function renderScore(){
@@ -172,5 +172,5 @@ function returnHome(){
     localStorage.totalQuestions = 0
     localStorage.score = 0
     document.location.href = 
-    'file:///C:/Users/Liam/Desktop/E-Careers-Bootcamp/Capstone%20Project/templates/home.html?'
+    './../templates/home.html'
 }
