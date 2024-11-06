@@ -39,6 +39,7 @@ def get_questions_and_choices(quiz_id):
 @app.route("/api/submit", methods=['POST'])
 @cross_origin(origins='*')
 def sumbit_and_score():
+    print("activated")
     connection = create_connection()
     cursor = connection.cursor(dictionary=True)
     answers = request.json['user_answers']
