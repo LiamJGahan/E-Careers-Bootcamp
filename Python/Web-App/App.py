@@ -14,11 +14,11 @@ def login():
         password = request.form['password']
         #validate with hardcoded values
         if username =='admin' and password == 'pass123':
-            return render_template ('login_response.html', message="Login Successful!")
+            return render_template('login_response.html', message='Login Successful!')
         else:
-            return render_template ('login_response.html', message="Login failed!")
+            return 'Invalid credentials!!'
 if __name__ == '__main__':
-    app.run()    
+    app.run(port = 5001)    
 
 # on login success/failure page put a back button
 # once you click on back button it takes you back to the login page
