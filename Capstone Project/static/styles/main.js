@@ -83,16 +83,25 @@ function renderQuestions(){
         currentQuestion = questionsAndChoices[0].question_id
     }
 
-    quizPanel = document.getElementById('quizPanel')
+    let quizCard = document.getElementById('quizCard')
+
+    if (quizCard == null){
+        let quizContainer = document.getElementById("quizContainer")
+
+        quizContainer.innerHTML = 
+        '<div class="card mt-4 mx-auto" style="width: 40rem;"><div id="quizCard" class="card-body"></div></div>'
+
+        quizCard = document.getElementById('quizCard')
+    }
 
     questionsAndChoices.forEach((question) =>{
         if(currentQuestion == question.question_id){
             if(choiceCounter == 1){
                 if (questionText == null){
                     let element = document.createElement('div')
-                    element.className = "container"
+                    element.className = "container mt-15"
                     element.innerHTML = '<h3 id="question" class="mt-5">'+ question.question_text +'</h3><br><br>'
-                    quizPanel.appendChild(element)
+                    quizCard.appendChild(element)
                 }
                 else{
                     questionText.innerHTML = question.question_text
@@ -102,7 +111,7 @@ function renderQuestions(){
                     let element = document.createElement('div')
                     element.className = 'card mb-3'                    
                     element.innerHTML = '<button id="choiceA" onclick="setAnswer(1)" class="btn btn-primary">'+ question.choice_text +'</button>'
-                    quizPanel.appendChild(element)
+                    quizCard.appendChild(element)
                     currentOptionA = {'question_id':question.question_id, 'choice_id':question.id}
                 }
                 else{
@@ -115,7 +124,7 @@ function renderQuestions(){
                     let element = document.createElement('div')
                     element.className = 'card mb-3'                    
                     element.innerHTML = '<button id="choiceB" onclick="setAnswer(2)" class="btn btn-primary">'+ question.choice_text +'</button>'
-                    quizPanel.appendChild(element)
+                    quizCard.appendChild(element)
                     currentOptionB = {'question_id':question.question_id, 'choice_id':question.id}
                 }
                 else{
@@ -128,7 +137,7 @@ function renderQuestions(){
                     let element = document.createElement('div')
                     element.className = 'card mb-3'
                     element.innerHTML = '<button id="choiceC" onclick="setAnswer(3)" class="btn btn-primary">'+ question.choice_text +'</button>'
-                    quizPanel.appendChild(element)
+                    quizCard.appendChild(element)
                     currentOptionC = {'question_id':question.question_id, 'choice_id':question.id}
                 }
                 else{
@@ -142,9 +151,8 @@ function renderQuestions(){
 
     if (home == null){
         let element = document.createElement('div')
-        element.className = "container"
         element.innerHTML = '<br><br><button id="home" onclick="returnHome()" class="btn btn-primary">Home</button> <button id="skip" onclick="skipQuestion()" class="btn btn-primary">Skip</button>'
-        quizPanel.appendChild(element)
+        quizCard.appendChild(element)
     }
 }
 
@@ -213,9 +221,20 @@ function openScore(json){
 }
 
 function renderScore(){
-    document.getElementById('score').innerHTML = 
-    '<h1 class="mt-5">'+ localStorage.totalQuestions +'' + '/' + ''+ localStorage.score +'</h1>' +
-    '<button onclick="returnHome()" class="btn btn-primary">Home</button>'
+
+    let score = document.getElementById('score')
+
+    if (score == null){
+        let scoreContainer = document.getElementById("scoreContainer")
+
+        scoreContainer.innerHTML = 
+        '<div class="card mt-4 mx-auto" style="width: 20rem;"><div id="score" class="card-body text-center"></div></div>'
+
+        score = document.getElementById('score')
+    }
+
+    score.innerHTML = 
+    '<h1 class="mt-2">'+ 'Your Score:'+ '</h1>' + '<h1 class="display-1 mt-4">' + localStorage.totalQuestions +'' + '/' + ''+ localStorage.score +'</h1><br><br><button onclick="returnHome()" class="btn btn-primary">Home</button>'
 }
 
 function returnHome(){
